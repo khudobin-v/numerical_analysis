@@ -13,7 +13,7 @@ def gauss_seidel(a, b, x_init=None, tolerance=1e-10, max_iterations=1000):
 
         # Проверяем сходимость
         if np.linalg.norm(x - x_old, ord=np.inf) < tolerance:
-            print(f"Сошлось за {iteration + 1} итераций.")
+            print(f"Сошлось за {iteration + 1} итерацию(-ий).")
             return x
 
     print("Максимальное количество итераций достигнуто, решение может быть не найдено.")
